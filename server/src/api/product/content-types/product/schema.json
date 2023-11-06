@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "float"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Footwear",
+        "Bags",
+        "Jewelry",
+        "Eyewear",
+        "Cosmetics",
+        "Jackets",
+        "Pants",
+        "Shirts"
+      ]
+    },
+    "pic": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
